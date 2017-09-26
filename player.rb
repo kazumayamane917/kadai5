@@ -2,7 +2,12 @@
 
 class Player < Sprite
   def update
-    self.x += Input.x
-    self.y += Input.y
+    self.x = Input.mouse_pos_x
+    self.y = Input.mouse_pos_y
   end
+
+  def hit(o)
+    self.delete
+  end
+ 
 end
