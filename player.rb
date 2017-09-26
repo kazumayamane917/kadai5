@@ -6,8 +6,6 @@ class Player < Sprite
     self.y = Input.mouse_pos_y
   end
 
-  def hit(o)
-    self.delete
-  end
+  
  
 end
